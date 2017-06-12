@@ -19,8 +19,15 @@ $(document).ready(function() {
     //   console.log(isDone);
 
 
-    $("ul#task-list").append("<li>" + "<input type='checkbox' unchecked /> \t" + inputtedTask + "</li>");
+    $("ul#task-listings").append("<li>" + "<input type='checkbox' class='new-done-box' unchecked /> \t" + inputtedTask + "</li>");
 
     $("input#new-task").val("");
+
+    $("input.new-done-box").click(function() {
+      $(this).remove();
+      $("#task-listings").children(":first-child").remove();
+      // $("#task-item").remove();
+      // $("input.new-done-box").last().remove();
+    });
   });
 });
