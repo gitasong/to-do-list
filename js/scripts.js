@@ -4,6 +4,10 @@ function Task(name, done) {
   this.done = done;
 };
 
+Task.prototype.completed = function() {
+  this.name.remove();
+}
+
 //user interface logic
 $(document).ready(function() {
   $("form#task-list").submit(function(event) {
@@ -19,15 +23,15 @@ $(document).ready(function() {
     //   console.log(isDone);
 
 
-    $("ul#task-listings").append("<li>" + "<input type='checkbox' class='new-done-box' unchecked /> \t" + inputtedTask + "</li>");
+    $("ul#task-listings").append("<li class='item'>" + inputtedTask + "</li>");
 
     $("input#new-task").val("");
 
-    $("input.new-done-box").click(function() {
+    $(".item").click(function() {
       $(this).remove();
-      $("#task-listings").children(":first-child").remove();
+    });
+
       // $("#task-item").remove();
       // $("input.new-done-box").last().remove();
-    });
   });
 });

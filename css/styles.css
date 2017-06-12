@@ -15,3 +15,7 @@ input, button {
 li {
   list-style-type: none;
 }
+
+.strikethrough {
+  text-decoration: line-through;
+}
