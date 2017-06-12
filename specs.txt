@@ -1,0 +1,53 @@
+The program should take a single to-do item from the user.
+  Input: laundry
+  Output: undefined
+
+The program should display a single to-do item on the web page.
+  Input: laundry
+  Output: laundry
+
+The program should display multiple entries in a list after the user hits Return for each item.
+Input: laundry <return>
+      grocery <return>
+      shopping <return>
+Output: laundry
+        grocery
+        shopping
+
+The program should display items listed in order of input first to last.
+Input: laundry <return>
+      grocery <return>
+      shopping <return>
+Output: shopping
+        grocery
+        laundry
+
+The program should allow the user to indicate if an item is done or not.
+  Input: √ shopping
+  Output: √ shopping
+
+The program should remove to-do items when the user indicates they are done.
+  Input: √ shopping
+          grocery
+          laundry
+  Input: grocery
+        laundry
+
+The program should allow the user to prioritize to-do items with a number.
+  Input: 3 shopping
+        1 grocery
+        2 laundry
+  Output: 1 grocery
+        2 laundry
+        3 shopping
+
+
+Optional Specs, for future releases:
+
+The program changes text-entry boxes to static text when Return is pressed.
+
+When the user hovers over an item, an arrow appears. When clicked on, the arrow opens up a pane with more information about the to-do item.
+
+When the user clicks the Done checkbox, a strikethrough appears through the item.
+
+When the user hits Backspace on an empty item, the previous item is selected.
