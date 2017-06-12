@@ -9,15 +9,18 @@ $(document).ready(function() {
   $("form#task-list").submit(function(event) {
     event.preventDefault();
 
-    var isDone = $("input:checkbox[name=done]:checked").val();
-      console.log(isDone);
     var inputtedTask = $("input#new-task").val();
       console.log(inputtedTask);
 
+    $("label").show();
     $("#task-item").show();
-    $("ul#task-list").append("<li>" + inputtedTask + "</li>");
 
-    $("input:checkbox[name=done]:checked").attr("checked", false);
+    // var isDone = $("input:checkbox[name=done]:checked").val();
+    //   console.log(isDone);
+
+
+    $("ul#task-list").append("<li>" + "<input type='checkbox' unchecked /> \t" + inputtedTask + "</li>");
+
     $("input#new-task").val("");
   });
 });

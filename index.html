@@ -14,7 +14,7 @@
           <h2>Add a task:</h2>
           <form id="task-list">
             <div class="form-group">
-              <input type="checkbox" id="done" name="done" value=true>
+
               <input type="text" class="form-control" id="new-task">
               <button type="submit" id="add" name="add">Add task</button>
             </div>
@@ -25,8 +25,11 @@
           <div id="show-task">
             <h2>Task List</h2>
             <ul id="task-list">
+              <label for="done">Done?</label>
+              <input type="checkbox" id="done" name="done" checked="checked" value=true>
               <li id="task-item"></li>
             </ul>
+
           </div>
         </div>
 

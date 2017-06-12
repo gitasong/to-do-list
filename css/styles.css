@@ -8,7 +8,7 @@ input, button {
   display: inline;
 }*/
 
-#show-task p {
+#show-task p, input#done, label {
   display: none;
 }
 
