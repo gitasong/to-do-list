@@ -18,9 +18,9 @@ The program should display items listed in order of input first to last.
 Input: laundry <return>
       grocery <return>
       shopping <return>
-Output: shopping
+Output: laundry
         grocery
-        laundry
+        shopping
 
 The program should allow the user to indicate if an item is done or not.
   Input: √ shopping

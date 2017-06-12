@@ -1,0 +1,17 @@
+/*form {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+input, button {
+  display: inline;
+}*/
+
+#show-task p {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}

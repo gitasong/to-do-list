@@ -9,7 +9,28 @@
   </head>
   <body>
     <div class="container">
-    
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a task:</h2>
+          <form id="task-list">
+            <div class="form-group">
+              <input type="checkbox" id="done" name="done" value=true>
+              <input type="text" class="form-control" id="new-task">
+              <button type="submit" id="add" name="add">Add task</button>
+            </div>
+          </form>
+        </div>
 
+        <div class="col-md-6">
+          <div id="show-task">
+            <h2>Task List</h2>
+            <ul id="task-list">
+              <li id="task-item"></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
